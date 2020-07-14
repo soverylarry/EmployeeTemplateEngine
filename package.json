@@ -1,0 +1,25 @@
+{
+  "name": "employeetemplateengine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soverylarry/EmployeeTemplateEngine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soverylarry/EmployeeTemplateEngine/issues"
+  },
+  "homepage": "https://github.com/soverylarry/EmployeeTemplateEngine#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.2"
+  }
+}
