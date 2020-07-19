@@ -86,7 +86,7 @@ function init(){
                 case "Intern":
                     addIntern();
                     break;
-                    default:createTeam();
+                    default:createHTML();
             }
         })
     }
@@ -213,7 +213,7 @@ function init(){
 
     
     //createTeam function
-    function createTeam() {
+    function createHTML() {
         // Create the output directory if the output path doesn't exist
         if (!fs.existsSync(OUTPUT_DIR)) {
             fs.mkdirSync(OUTPUT_DIR)
