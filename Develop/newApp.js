@@ -152,7 +152,7 @@ function init(){
 
 
     //addIntern function
-    function addEngineer(){
+    function addIntern(){
         inquirer.prompt([
             {
             type: "input",
@@ -213,7 +213,7 @@ function init(){
 
     
     //createTeam function
-    function buildTeam() {
+    function createTeam() {
         // Create the output directory if the output path doesn't exist
         if (!fs.existsSync(OUTPUT_DIR)) {
             fs.mkdirSync(OUTPUT_DIR)
@@ -222,6 +222,6 @@ function init(){
         fs.writeFileSync(outputPath, render(employeeInfo), "utf-8");
         }
 
-    addManager();
+    addManager();   
 }
 init();
