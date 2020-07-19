@@ -18,7 +18,7 @@ function init(){
         inquirer.prompt([
             {
             type: "input",
-            message: "What is your full name?",
+            message: "What is your Manager's name?",
             name: "manager",
             validate: name => {
                 const pass = name.match(
@@ -27,22 +27,22 @@ function init(){
                 if(pass){
                     return true;
                 }
-                return "please input a name, jackass";
+                return "please input a manager name";
             }
             },
             {
             type: "input",
-            message: "Please enter your ID",
+            message: "Please enter your Manager ID",
             name: "managerId"
             },
             {
             type: "input",
-            message: "Please enter your office number",
+            message: "Please enter your manager's office number",
             name: "managerOfficeNumber"
             },
             {
             type: "input",
-            message: "Please enter your email",
+            message: "Please enter your managers's email",
             name: "managerEmail"
             }
         ])
@@ -73,7 +73,7 @@ function init(){
         inquirer.prompt([{
             type:"list",
             name: "teamChoice",
-            message: "enter member type please",
+            message: "Please enter next member type please",
             choices: ["Engineer", "Intern", "I'm done"],
 
         }])
@@ -96,7 +96,7 @@ function init(){
         inquirer.prompt([
             {
             type: "input",
-            message: "What is your full name?",
+            message: "What is your Engineer's first name?",
             name: "engineer",
             validate: name => {
                 const pass = name.match(
@@ -105,27 +105,22 @@ function init(){
                 if(pass){
                     return true;
                 }
-                return "please input a name, jackass";
+                return "please input a name";
             }
             },
             {
             type: "input",
-            message: "Please enter your name",
-            name: "engineer"
-            },
-            {
-            type: "input",
-            message: "Please enter your number",
+            message: "Please enter your Engineer number",
             name: "engineerId"
             },
             {
             type: "input",
-            message: "Please enter your email",
+            message: "Please enter your Engineer's email",
             name: "engineerEmail"
             },
             {
             type: "input",
-            message: "What is your engineer's Github username?",
+            message: "What is your Engineer's Github username?",
             name: "engineerGitHub"
             }
         ])
@@ -156,8 +151,8 @@ function init(){
         inquirer.prompt([
             {
             type: "input",
-            message: "What is your full name?",
-            name: "engineer",
+            message: "What is your Intern's name?",
+            name: "intern",
             validate: name => {
                 const pass = name.match(
                     /^[A-Za-z]+$/
@@ -165,27 +160,22 @@ function init(){
                 if(pass){
                     return true;
                 }
-                return "please input a name, jackass";
+                return "please input a name";
             }
             },
             {
             type: "input",
-            message: "Please enter your name",
-            name: "intern"
-            },
-            {
-            type: "input",
-            message: "Please enter your inter's ID",
+            message: "Please enter your Intern's ID",
             name: "internId"
             },
             {
             type: "input",
-            message: "Please enter your intern's email",
+            message: "Please enter your Intern's email",
             name: "internEmail"
             },
             {
             type: "input",
-            message: "What is your intern's Github username?",
+            message: "What is your Intern's college name?",
             name: "internSchool"
             }
         ])
