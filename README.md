@@ -10,6 +10,17 @@ assignment must also pass all unit tests. When the user has completed building t
 will create an HTML file that displays a nicely formatted team roster based on the information provided 
 by the user.
 
+## Table of Contents
+    * Badges
+    * Description
+    * User Story
+    * Technology Utilized
+    * Contributors
+    * Testing
+    * Questions
+    * Project Links
+    * Images of Output
+
 ## User Story
     * As a manager I want to be able to add Team members to my staff and be able to quickly update my
      website with their contact information and ID's. 
@@ -23,7 +34,6 @@ by the user.
 ## Contributors
     * Developer, coding camp tutors and learning assistants.
 
-## Table of Contents
 
 ## Testing
     * confirmed via Jest
