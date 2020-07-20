@@ -32,6 +32,10 @@ by the user.
 If you have any questions related to this repo, please contact me at:
 Email: soverylarry@gmail.com
 
+## Project Links
+Repo: [GitHub](https://github.com/soverylarry/EmployeeTemplateEngine)
+Video: https://drive.google.com/file/d/1bJFDvt71MJjKtcL8IwjRS9Ce7tdo61k_/view
+
 ## Images of Output
 <img src="Assets\TemplateEngineHTML.png">
 
