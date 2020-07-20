@@ -33,17 +33,44 @@ function init(){
             {
             type: "input",
             message: "Please enter your Manager ID",
-            name: "managerId"
+            name: "managerId",
+            validate: id => {
+                const pass = id.match(
+                    /^[0-9]+$/
+                );
+                if (pass) {
+                    return true;
+                }
+                return 'You must input a number.'
+                }
             },
             {
             type: "input",
-            message: "Please enter your manager's office number",
-            name: "managerOfficeNumber"
+            message: "Please enter your manager's office number, numbers only please",
+            name: "managerOfficeNumber",
+            validate: officeNumber => {
+                const pass = officeNumber.match(
+                    /^[0-9]+$/
+                );
+                if (pass) {
+                    return true;
+                }
+                return 'You must enter numbers only in the office number.'
+                }
             },
             {
             type: "input",
             message: "Please enter your managers's email",
-            name: "managerEmail"
+            name: "managerEmail",
+            validate:(email) => {
+                const pass = email.match(
+                    /.com/
+                )
+                if (pass) {
+                    return true;   
+                }
+                return 'You must input an email with a .com.'
+            }
             }
         ])
         
@@ -111,17 +138,44 @@ function init(){
             {
             type: "input",
             message: "Please enter your Engineer ID number",
-            name: "engineerId"
+            name: "engineerId",
+            validate: id => {
+                const pass = id.match(
+                    /^[0-9]+$/
+                );
+                if (pass) {
+                    return true;
+                }
+                return 'You must input a number.'
+                }
             },
             {
             type: "input",
             message: "Please enter your Engineer's email",
-            name: "engineerEmail"
+            name: "engineerEmail",
+            validate:(email) => {
+                const pass = email.match(
+                    /.com/
+                )
+                if (pass) {
+                    return true;   
+                }
+                return 'You must input an email with a .com.'
+            }
             },
             {
             type: "input",
             message: "What is your Engineer's Github username?",
-            name: "engineerGitHub"
+            name: "engineerGitHub",
+            validate: name => {
+                const pass = name.match(
+                    /^[A-Za-z]+$/
+                );
+                if(pass){
+                    return true;
+                }
+                return "please input a GitHub user name";
+            }
             }
         ])
         
@@ -166,17 +220,44 @@ function init(){
             {
             type: "input",
             message: "Please enter your Intern's ID",
-            name: "internId"
+            name: "internId",
+            validate: id => {
+                const pass = id.match(
+                    /^[0-9]+$/
+                );
+                if (pass) {
+                    return true;
+                }
+                return 'You must input a number.'
+                }
             },
             {
             type: "input",
             message: "Please enter your Intern's email",
-            name: "internEmail"
+            name: "internEmail",
+            validate:(email) => {
+                const pass = email.match(
+                    /.com/
+                )
+                if (pass) {
+                    return true;   
+                }
+                return 'You must input an email with a .com.'
+            }
             },
             {
             type: "input",
             message: "What is your Intern's college name?",
-            name: "internSchool"
+            name: "internSchool",
+            validate: name => {
+                const pass = name.match(
+                    /^[A-Za-z]+$/
+                );
+                if(pass){
+                    return true;
+                }
+                return "please input a school name";
+            }
             }
         ])
         
