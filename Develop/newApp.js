@@ -110,7 +110,7 @@ function init(){
             },
             {
             type: "input",
-            message: "Please enter your Engineer number",
+            message: "Please enter your Engineer ID number",
             name: "engineerId"
             },
             {
